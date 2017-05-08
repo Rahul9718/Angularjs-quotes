@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="change">
+    <head>
+        <link rel="stylesheet" href="quotes_list.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+        <script type="text/javascript" src="angular.min.js"></script>
+        <script type="text/javascript" src="quotes_list.js"></script>
+        <title>Quote list</title>
+    </head>
+    <body ng-controller="ChangeController">
+ 
+        <div class="flex-container">
+            <div class="flex-item1" id="first">
+            {{quote}}
+            </div>
+            <div class="flex-item2" id="second" ng-show = "show">
+                   {{author}}
+            </div>
+            <div class="flex-item3">
+                <button id="rahul" ng-click="changequotes()">Click me</button>
+                <button id="rahul" ng-click="showauthor()">{{show_author}}</button>    
+            </div>
+         </div>
+    <div class = "secod-container"> 
+                    <div class ="part2" ng-repeat ="line in lines" ng-click="remove($index)">
+                    {{line}}
+            </div> 
+    </div>
+
+    </body>
+</html>

@@ -1,0 +1,60 @@
+body{
+    align-items: center;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;    
+    margin: 0;
+    min-height: 100vh;
+}
+
+
+.flex-container{
+
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    justify-content: center;
+    margin: 10px;
+    width: 500px;
+}
+
+.flex-item1{
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    margin: 10px;
+}
+
+.flex-item2{
+    align-self: flex-end;
+    display: flex;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.flex-item3{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+#rahul{
+    background-color: white;
+    height: 30px;
+    outline: none;
+    
+}
+.secod-container{
+    display: flex;
+    background-color: aquamarine;
+    width: 500px;
+    height: 350px;
+    flex-direction: column;
+
+}
+
+.part2{
+    margin: 20px;
+    cursor: pointer;
+}
