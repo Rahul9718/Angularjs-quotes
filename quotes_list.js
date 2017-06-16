@@ -24,7 +24,7 @@
         $scope.line =0;
         $scope.remove =function (index){
             console.log(index)
-            $scope.line =lines[index];
+            $scope.quote = $scope.lines[index]
             list_index =index;
         }
         
