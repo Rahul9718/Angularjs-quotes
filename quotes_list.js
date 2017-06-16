@@ -21,11 +21,11 @@
         
 
         
-        $scope.line =0;
-        $scope.remove =function (index){
+        $scope.clickonline =function (index){
             console.log(index)
             $scope.quote = $scope.lines[index]
             list_index =index;
+            console.log(index) 
         }
         
         
@@ -42,6 +42,9 @@
         }
 
         function changequotes(){
+            if (list_index==quotes.length-1){
+                list_index = -1;
+            }
             if (list_index%2 == 1){
                 for_show();
             }
@@ -53,10 +56,6 @@
 
             $scope.author = authors[list_index];
             $scope.quote = quotes[list_index];
-
-            if (list_index==quotes.length-1){
-                list_index = -1;
-            }
         };
         
         $scope.showauthor = function showauthor(){
